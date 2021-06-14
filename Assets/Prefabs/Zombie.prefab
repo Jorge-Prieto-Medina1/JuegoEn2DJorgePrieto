@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &69181622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69181623}
+  m_Layer: 0
+  m_Name: PuntoDeAtaque
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &69181623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69181622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.114, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2979769377838442031}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2979769377838442026
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +44,7 @@ GameObject:
   - component: {fileID: 2979769377838442028}
   - component: {fileID: 2979769377838442029}
   - component: {fileID: 2979769377838442024}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -31,7 +61,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.894, y: -2.392, z: -1.5133766}
   m_LocalScale: {x: 10.5222645, y: 10.515536, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 69181623}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -69,7 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salud: 100
+  velocidad: 4
   animator: {fileID: 2979769377838442029}
+  Objetivo: {fileID: 0}
+  zombie: {fileID: 2979769377838442031}
 --- !u!61 &2979769377838442028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0070868656, y: -0.00058947504}
+  m_Offset: {x: 0.007302098, y: -0.00058947504}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -94,7 +128,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17633171, y: 0.25961575}
+  m_Size: {x: 0.17590125, y: 0.25961575}
   m_EdgeRadius: 0
 --- !u!95 &2979769377838442029
 Animator:

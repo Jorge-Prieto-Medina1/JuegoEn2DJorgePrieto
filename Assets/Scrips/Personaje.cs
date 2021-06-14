@@ -17,6 +17,13 @@ public class Personaje : MonoBehaviour
     private bool saltando;
     private bool agachado;
     private bool rifleDeAsalto;
+    private bool vivo;
+    public int salud;
+    public bool Vivo
+    {
+        get { return vivo; }
+        set { vivo = value; }
+    }
     public bool Agachado
     {
         get { return agachado; }
@@ -45,13 +52,17 @@ public class Personaje : MonoBehaviour
         rifleDeAsalto = false;
         rifleAnimator.enabled = false;
         rifleRenderer.enabled = false;
+        vivo = true;
+        salud = 5;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
         if (Input.GetKeyDown(KeyCode.Space) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.S)
-            && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && vivo)
         {
             if (!rifleDeAsalto)
             {
@@ -77,7 +88,7 @@ public class Personaje : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.A) && !agachado)
+        if (Input.GetKey(KeyCode.A) && !agachado && vivo)
         {
             if (!rifleDeAsalto)
             {
@@ -96,7 +107,7 @@ public class Personaje : MonoBehaviour
             }
         }
         else
-        if (Input.GetKey(KeyCode.D) && !agachado)
+        if (Input.GetKey(KeyCode.D) && !agachado && vivo)
         {
             if (!rifleDeAsalto)
             {
@@ -116,7 +127,7 @@ public class Personaje : MonoBehaviour
            
         }
 
-        if (Input.GetKey(KeyCode.S) && !Saltando)
+        if (Input.GetKey(KeyCode.S) && !Saltando && vivo)
         {
             if (!rifleDeAsalto)
             {
@@ -132,7 +143,7 @@ public class Personaje : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.S) && !Saltando)
+        if (Input.GetKeyUp(KeyCode.S) && !Saltando && vivo)
         {
             if (!rifleDeAsalto)
             {
@@ -150,10 +161,11 @@ public class Personaje : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.W) && !Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.W) && !Input.GetKey(KeyCode.S) && vivo)
         {
             if (!rifleDeAsalto)
             {
+
                 animator.SetBool("Agachado", false);
                 saltar();
             }
@@ -165,11 +177,11 @@ public class Personaje : MonoBehaviour
  
         }
 
-        if (animator.GetBool("Caminar") && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && !saltando)
+        if (animator.GetBool("Caminar") && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && !saltando && vivo)
         {
             animator.SetBool("Caminar", false);
         }
-        if (rifleAnimator.GetBool("Correr") && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && !saltando)
+        if (rifleAnimator.GetBool("Correr") && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && !saltando && vivo)
         {
             rifleAnimator.SetBool("Correr", false);
         }
@@ -178,7 +190,7 @@ public class Personaje : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D _col)
     {
-        if (_col.gameObject.tag == "Suelo")
+        if (_col.gameObject.tag == "Suelo" && vivo)
         {
             if (!rifleDeAsalto)
             {
@@ -191,11 +203,51 @@ public class Personaje : MonoBehaviour
             saltando = false;
         }
 
+
+        if (_col.gameObject.tag == "Ataque" && vivo)
+        {
+            Debug.Log("Ataque recibido salud: "+this.salud);
+            salud = salud - 1;
+            if (rifleDeAsalto)
+            {
+                rifleAnimator.SetTrigger("Herido");
+            }
+            else
+            {
+                animator.SetTrigger("Herido");
+            }
+
+            if(salud <= 0)
+            {
+                vivo = false;
+                if (rifleDeAsalto)
+                {
+                    rifleAnimator.SetBool("Muerto", true);
+                }
+                else
+                {
+                    animator.SetBool("Muerto", true);
+                }
+                Invoke("MuerteFinal", 0.5f);
+            }
+        }
+    }
+
+    public void MuerteFinal()
+    {
+        if (rifleDeAsalto)
+        {
+            rifleAnimator.SetBool("MuerteFinal", true);
+        }
+        else
+        {
+            animator.SetBool("MuerteFinal", true);
+        }
     }
 
     public void girar(float horizontal)
     {
-        if (horizontal == 1 && !mirandoDerecha || horizontal == -1 && mirandoDerecha)
+        if (horizontal == 1 && !mirandoDerecha || horizontal == -1 && mirandoDerecha && vivo)
         {
             mirandoDerecha = !mirandoDerecha;
 
@@ -205,7 +257,7 @@ public class Personaje : MonoBehaviour
 
     public void saltar()
     {
-        if (!saltando)
+        if (!saltando && vivo)
         {
             if (!rifleDeAsalto)
             {
