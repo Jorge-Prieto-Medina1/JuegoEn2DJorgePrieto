@@ -19,6 +19,7 @@ public class Personaje : MonoBehaviour
     private bool rifleDeAsalto;
     private bool vivo;
     public int salud;
+    private bool puedeRecibirAtaque;
     public bool Vivo
     {
         get { return vivo; }
@@ -53,6 +54,7 @@ public class Personaje : MonoBehaviour
         rifleAnimator.enabled = false;
         rifleRenderer.enabled = false;
         vivo = true;
+        puedeRecibirAtaque = true;
         salud = 5;
     }
 
@@ -204,9 +206,10 @@ public class Personaje : MonoBehaviour
         }
 
 
-        if (_col.gameObject.tag == "Ataque" && vivo)
+        if (_col.gameObject.tag == "Ataque" || _col.gameObject.tag == "AnomaliaBola" && vivo && puedeRecibirAtaque)
         {
             Debug.Log("Ataque recibido salud: "+this.salud);
+            puedeRecibirAtaque = false;
             salud = salud - 1;
             if (rifleDeAsalto)
             {
@@ -230,7 +233,16 @@ public class Personaje : MonoBehaviour
                 }
                 Invoke("MuerteFinal", 0.5f);
             }
+
+            Invoke("PuedeRecibirAtaque", 1f);
         }
+
+
+    }
+
+    public void PuedeRecibirAtaque()
+    {
+        puedeRecibirAtaque = true;
     }
 
     public void MuerteFinal()

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69181623}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PuntoDeAtaque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69181622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.114, y: 0, z: 0}
+  m_LocalPosition: {x: -0.153, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2979769377838442031}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2979769377838442028}
   - component: {fileID: 2979769377838442029}
   - component: {fileID: 2979769377838442024}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Zombie
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -104,6 +104,8 @@ MonoBehaviour:
   animator: {fileID: 2979769377838442029}
   Objetivo: {fileID: 0}
   zombie: {fileID: 2979769377838442031}
+  ataque: {fileID: 101979495123043227, guid: 90789bb86a899dc48919b80a44a7ba49, type: 3}
+  posicionAtaque: {fileID: 69181622}
 --- !u!61 &2979769377838442028
 BoxCollider2D:
   m_ObjectHideFlags: 0

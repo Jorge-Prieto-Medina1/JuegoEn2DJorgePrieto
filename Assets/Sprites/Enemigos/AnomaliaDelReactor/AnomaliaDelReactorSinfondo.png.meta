@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: fc3b7a48f392eff4b85635bd77e1c6f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -78736230925420774
+    second: AnomaliaDelReactorSinfondo_2
+  - first:
+      213: 8415417088489817936
+    second: AnomaliaDelReactorSinfondo_3
+  - first:
+      213: 1617134578208345770
+    second: AnomaliaDelReactorSinfondo_4
+  - first:
+      213: 2527805838184327883
+    second: AnomaliaDelReactorSinfondo_5
+  - first:
+      213: -1924526096422997000
+    second: AnomaliaDelReactorSinfondo_6
+  - first:
+      213: -5440222862197576849
+    second: AnomaliaDelReactorSinfondo_7
+  - first:
+      213: 7008978749285791866
+    second: AnomaliaDelReactorSinfondo_8
+  - first:
+      213: -9167410201428811809
+    second: AnomaliaDelReactorSinfondo_9
+  - first:
+      213: -2637261030388918342
+    second: AnomaliaDelReactorSinfondo_10
+  - first:
+      213: 2494022121798762272
+    second: AnomaliaDelReactorSinfondo_11
+  - first:
+      213: 7320343716014204021
+    second: AnomaliaDelReactorSinfondo_12
+  - first:
+      213: -5262187296168790911
+    second: AnomaliaDelReactorSinfondo_13
+  - first:
+      213: -331824930591087333
+    second: AnomaliaDelReactorSinfondo_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 251
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17a37363d0b42720800000000000000
+      internalID: 2820573688593884954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 249
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270550e9fbcff6150800000000000000
+      internalID: 5868186739407147122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 271
+        width: 28
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17bcbca0d548eef0800000000000000
+      internalID: -78736230925420774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 249
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0570034514199c470800000000000000
+      internalID: 8415417088489817936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 188
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae0c18b457317610800000000000000
+      internalID: 1617134578208345770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 188
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaa2265402941320800000000000000
+      internalID: 2527805838184327883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 188
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3fcbd36b5ba45e0800000000000000
+      internalID: -1924526096422997000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 188
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b21cf51227084b0800000000000000
+      internalID: -5440222862197576849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 188
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78f07d8905e44160800000000000000
+      internalID: 7008978749285791866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_9
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 7
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf1b892ef0d6c080800000000000000
+      internalID: -9167410201428811809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 7
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab710bfc011966bd0800000000000000
+      internalID: -2637261030388918342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_11
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 7
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ff7c7e7eb8c9220800000000000000
+      internalID: 2494022121798762272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 6
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5742aca23d5179560800000000000000
+      internalID: 7320343716014204021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_13
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 128
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184394ec884f8f6b0800000000000000
+      internalID: -5262187296168790911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnomaliaDelReactorSinfondo_14
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 128
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15ef74dbfe156bf0800000000000000
+      internalID: -331824930591087333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

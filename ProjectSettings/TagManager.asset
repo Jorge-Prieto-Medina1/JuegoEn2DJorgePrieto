@@ -8,6 +8,7 @@ TagManager:
   - Suelo
   - Enemigo
   - Ataque
+  - AnomaliaBola
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Bala
   - Personaje
   - Enemigo
-  - 
+  - Laser
   - 
   - 
   - 

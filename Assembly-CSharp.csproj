@@ -57,8 +57,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scrips\AnomaliaBola.cs" />
+    <Compile Include="Assets\Scrips\AnomaliaReactor.cs" />
     <Compile Include="Assets\Scrips\Ataque.cs" />
     <Compile Include="Assets\Scrips\Bala.cs" />
+    <Compile Include="Assets\Scrips\LaserAnomalia.cs" />
     <Compile Include="Assets\Scrips\Personaje.cs" />
     <Compile Include="Assets\Scrips\Rifle.cs" />
     <Compile Include="Assets\Scrips\SeguimientoDeCamara.cs" />

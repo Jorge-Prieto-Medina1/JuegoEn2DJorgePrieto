@@ -39,7 +39,32 @@ public class Bala : MonoBehaviour
             zombie.RecibirImpacto(daño);
             Invoke("DestruirBala", 0.5f);
         }
-        
+        else
+        {
+            AnomaliaBola bola =  _col.GetComponent<AnomaliaBola>();
+            if(bola != null)
+            {
+                transform.Rotate(0f, 180f, 0f);
+                bola.RecibirImpacto(daño);
+                Invoke("DestruirBala", 0.5f);
+            }
+            else
+            {
+                AnomaliaReactor reactor = _col.GetComponent<AnomaliaReactor>();
+                if (reactor != null)
+                {
+                    transform.Rotate(0f, 180f, 0f);
+                    animator.SetTrigger("EnemigoImpactado");
+                    reactor.RecibirImpacto(daño);
+                    Invoke("DestruirBala", 0.5f);
+                }
+            }
+        }
+
+
+
+
+
     }
 
     private void DestruirBala()
